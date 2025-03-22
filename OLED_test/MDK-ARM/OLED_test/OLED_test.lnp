@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"oled_test\startup_stm32f103xb.o"
+"oled_test\soft_iic.o"
+"oled_test\main.o"
+"oled_test\gpio.o"
+"oled_test\i2c.o"
+"oled_test\stm32f1xx_it.o"
+"oled_test\stm32f1xx_hal_msp.o"
+"oled_test\oled.o"
+"oled_test\stm32f1xx_hal_gpio_ex.o"
+"oled_test\stm32f1xx_hal_i2c.o"
+"oled_test\stm32f1xx_hal.o"
+"oled_test\stm32f1xx_hal_rcc.o"
+"oled_test\stm32f1xx_hal_rcc_ex.o"
+"oled_test\stm32f1xx_hal_gpio.o"
+"oled_test\stm32f1xx_hal_dma.o"
+"oled_test\stm32f1xx_hal_cortex.o"
+"oled_test\stm32f1xx_hal_pwr.o"
+"oled_test\stm32f1xx_hal_flash.o"
+"oled_test\stm32f1xx_hal_flash_ex.o"
+"oled_test\stm32f1xx_hal_exti.o"
+"oled_test\stm32f1xx_hal_tim.o"
+"oled_test\stm32f1xx_hal_tim_ex.o"
+"oled_test\system_stm32f1xx.o"
+--strict --scatter "OLED_test\OLED_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLED_test.map" -o OLED_test\OLED_test.axf
